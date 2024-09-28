@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-25T22:36:22 IST" name="Default suite" finished-at="2024-09-25T22:37:15 IST" duration-ms="53467">
+    <groups>
+      <group name="SeleniumTests">
+        <method signature="Fluent.fluentWait()[pri:0, instance:selenium.Fluent@5cee5251]" name="fluentWait" class="selenium.Fluent"/>
+      </group> <!-- SeleniumTests -->
+    </groups>
+    <test started-at="2024-09-25T22:36:22 IST" name="Default test" finished-at="2024-09-25T22:37:15 IST" duration-ms="53467">
+      <class name="selenium.Fluent">
+        <test-method is-config="true" signature="extentReportSetup()[pri:0, instance:selenium.Fluent@5cee5251]" started-at="2024-09-25T22:36:21 IST" name="extentReportSetup" finished-at="2024-09-25T22:36:22 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReportSetup -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:selenium.Fluent@5cee5251]" started-at="2024-09-25T22:36:22 IST" name="setup" finished-at="2024-09-25T22:37:07 IST" duration-ms="45115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="fluentWait()[pri:0, instance:selenium.Fluent@5cee5251]" started-at="2024-09-25T22:37:07 IST" name="fluentWait" finished-at="2024-09-25T22:37:15 IST" duration-ms="8241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fluentWait -->
+        <test-method is-config="true" signature="insertTestResultStatusToExtentReport(org.testng.ITestResult)[pri:0, instance:selenium.Fluent@5cee5251]" started-at="2024-09-25T22:37:15 IST" name="insertTestResultStatusToExtentReport" finished-at="2024-09-25T22:37:15 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fluentWait status=SUCCESS method=Fluent.fluentWait()[pri:0, instance:selenium.Fluent@5cee5251] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertTestResultStatusToExtentReport -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:selenium.Fluent@5cee5251]" started-at="2024-09-25T22:37:15 IST" name="teardown" finished-at="2024-09-25T22:37:15 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="flushExtentReport()[pri:0, instance:selenium.Fluent@5cee5251]" started-at="2024-09-25T22:37:15 IST" name="flushExtentReport" finished-at="2024-09-25T22:37:16 IST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushExtentReport -->
+      </class> <!-- selenium.Fluent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

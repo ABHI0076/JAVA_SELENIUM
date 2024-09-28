@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="classes" name="Suite" verbose="2">
+    
+	<groups>
+		<run>
+			<exclude name="JavaTests"></exclude>
+			<include name="SeleniumTests"></include>
+		</run>
+	</groups>
+	
+	<listeners>
+        <listener class-name="utilities.ListenersClass" />
+    </listeners>
+
+	<test name="JavaPrograms">
+		<classes>
+			<class name="program.ReverseString_PreservingPositionOfSpace"></class>
+			<class name="program.ReverseString_With_Condition"></class>
+			<class name="program.Count_NumberOfCharacter_In_String"></class>
+			<class name="program.Iterate_HashMap"></class>
+			<class name="program.Sorting_Array"></class>
+			<class name="program.Highest_And_Lowest_From_Array"></class>
+			<class name="program.Second_Lowest_From_Array"></class>
+			<class name="program.String_Program"></class>
+			<class name="program.Fibonacci_Series"></class>
+
+		</classes>
+	</test>
+
+	<test name="SeleniumProgram_On_Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="selenium.ExplicitWait"></class>
+			<class name="selenium.Fluent"></class>
+			<class name="selenium.Tab_Handling"></class>
+			<class name="selenium.Window_Handling"></class>
+		</classes>
+	</test>
+
+	<test name="SeleniumProgram_On_Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="selenium.ExplicitWait"></class>
+			<class name="selenium.SelectClass"></class>
+		</classes>
+	</test>
+
+	<!--<test name="package level execution">
+		<packages>
+			<package name="selenium" />
+			<package name="program" />
+		</packages>
+	</test>-->
+
+</suite> 
