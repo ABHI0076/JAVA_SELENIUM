@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Base64;
 import java.util.Date;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -45,6 +46,8 @@ public class BaseClass extends ExtentReporting {
 	 */
 	public WebDriver driver;
 	public ITestContext context;
+	public FileInputStream fis;
+	public Properties prop;
 
 	@BeforeClass(alwaysRun = true)
 	@Parameters("browser")
@@ -83,6 +86,19 @@ public class BaseClass extends ExtentReporting {
 		/* Automatically open the report in the browser. */
 		Desktop.getDesktop().browse(new File("./Reports/ExtentReport.html").toURI());
 		System.out.println("Inside After Suite.");
+	}
+	
+	@BeforeSuite(alwaysRun = true)
+	public void propertiesFileSetup() throws IOException {
+		if(fis==null) {
+		 fis= new FileInputStream(
+				System.getProperty("user.dir") + "/TestData/Global.properties");
+		}
+		if(prop==null) {
+			prop = new Properties();
+		}
+		prop.load(fis);
+		
 	}
 
 	@AfterMethod(alwaysRun = true)
